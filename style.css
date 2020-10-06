@@ -1,0 +1,94 @@
+:root {
+    --brand-color: #FED136;
+    --brand-font: 'Courgette', cursive;
+    --main-font: 'Roboto', sans-serif;
+}
+body {
+    font-family: var(--main-font);
+}
+.navbar {
+    background: #27262B;
+}
+a.navbar-brand {
+    font-family: var(--brand-font);
+    color: var(--brand-color) !important;
+    font-size: 25px;
+    
+}
+.nav-link:hover {
+    color: var(--brand-color) !important;
+}
+
+.banner-heading {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-heading > h1 {
+    font-family: var(--brand-font);
+    color: var(--brand-color);
+}
+.banner-heading > a {
+    background: var(--brand-color);
+}
+
+#services, #portfolio, #about, #team, #logos, #contact {
+    padding: 100px 0;
+}
+#logos {
+    padding: 50px 0;
+}
+#services > p, #portfolio > p,
+#about > p,
+#team > p   {
+    color: var(--brand-color);
+    font-family: var(--brand-font);
+}
+
+.icon-box {
+    width: 120px;
+    height: 120px;
+    background: var(--brand-color);
+}
+
+.icon-box:hover {
+    background: white;
+    border: 2px solid var(--brand-color);
+    cursor: pointer;
+}
+.icon-box:hover > .fas {
+    color: var(--brand-color) !important;
+}
+.hover-box {
+    position: relative;
+}
+.hover-box > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.hover-box:hover > div {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.modal-btn {
+    background: var(--brand-color);
+}
+.modal-btn:focus {
+    outline: none !important;
+}
+.outline {
+    border: 7px solid #d5d5d5;
+}
+
+#contact{
+    background-image:url('images/map-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+}
